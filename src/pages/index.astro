@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Button from '../components/Button.astro';
 ---
 
 <Layout 
@@ -8,14 +10,24 @@ import Header from '../components/Header.astro';
 	description="Veterinaria Salguero. Cirugia, Consultorio, Laboratorio y Estudios. Fco. Acuña de Figueroa 1599">
 	<div class="bg-[url(/images/image-home.webp)] bg-cover bg-right min-h-screen">
 		<Header />
-		<section>
-
-		</section>
+		<SectionContainer>
+			<div class="flex flex-col items-center sm:items-start gap-8 bg-gray-200/50 text-center sm:text-start text-pretty rounded-lg p-10 sm:p-5 md:p-1 sm:bg-transparent">
+				<p class="text-xl md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> a nuestro sitio web </p>
+				<h1 class="text-3xl md:text-5xl uppercase text-primary-violet font-bold"> Veterinaria Salguero </h1>
+				<p class="text-md md:text-xl font-light sm:w-2/3"> Con mas de 10 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
+				<Button> Contactanos </Button>
+			</div>
+		</SectionContainer>
 	</div>
 	<main>
-		<section>
-
-		</section>	
+		<SectionContainer>
+			<div class="flex flex-col gap-8 bg-gray-200 sm:bg-transparent">
+				<p class="text-xl md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> a nuestro sitio web </p>
+				<h1 class="text-3xl md:text-5xl uppercase text-primary-violet font-bold"> Veterinaria Salguero </h1>
+				<p class="text-md md:text-xl font-light w-2/3"> Con mas de 10 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
+				<Button> Contactanos </Button>
+			</div>
+		</SectionContainer>	
 	</main>
 	
 </Layout>
