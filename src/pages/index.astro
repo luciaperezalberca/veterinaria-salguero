@@ -3,6 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import Stethoscope from '../components/icons/Stethoscope.astro';
+import Hospital from '../components/icons/Hospital.astro';
+import MedicalCross from '../components/icons/MedicalCross.astro';
+import Vaccine from '../components/icons/Vaccine.astro';
+import Micropscope from '../components/icons/Micropscope.astro';
+import Bath from '../components/icons/Bath.astro';
 ---
 
 <Layout 
@@ -20,14 +27,34 @@ import Button from '../components/Button.astro';
 		</SectionContainer>
 	</div>
 	<main>
-		<SectionContainer>
-			<div class="flex flex-col gap-8 bg-gray-200 sm:bg-transparent">
-				<p class="text-xl md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> a nuestro sitio web </p>
-				<h1 class="text-3xl md:text-5xl uppercase text-primary-violet font-bold"> Veterinaria Salguero </h1>
-				<p class="text-md md:text-xl font-light w-2/3"> Con mas de 10 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
-				<Button> Contactanos </Button>
+		<section class="flex flex-col justify-center items-center mt-20">
+			<h1 class="text-4xl">Nuestros <span class="text-primary-violet font-bold">Servicios</span></h1>
+			<div  class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center p-10 xl:pl-32 xl:pr-32">
+				<Card>
+					<Stethoscope />
+					<p class="p-5 text-center text-[17px]">Chequeos y controles de rutina para tus mascotas</p>
+				</Card>
+				<Card>
+					<Hospital />
+					<p class="p-5 text-center text-[17px]">Cirugias programadas y de urgencia, simples y de alta complejidad</p>
+				</Card>
+				<Card>
+					<MedicalCross />
+					<p class="p-5 text-center text-[17px]">Servicios de urgencia. Contamos con las últimas tecnologías</p>
+				</Card>
+				<Card>
+					<Vaccine />
+					<p class="px-4 py-5 text-center text-[17px]">Servicio de vacunación. Vacunas de calendario y especiales</p>
+				</Card>
+				<Card>
+					<Micropscope />
+					<p class="p-5 text-center text-[17px]">Laboratorio, estudios y especialidades. Consultanos!</p>
+				</Card>
+				<Card>
+					<Bath />
+					<p class="p-5 text-center text-[17px]">Contamos con baño y peluquería todos los Martes y Sábados</p>
+				</Card>
 			</div>
-		</SectionContainer>	
+		</section>	
 	</main>
-	
 </Layout>

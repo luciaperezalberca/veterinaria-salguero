@@ -8,6 +8,9 @@ export default {
 			  'primary-violet': '#87519F',
 			  'primary-lightviolet': '#D2C3D9',
 			},
+			dropShadow: {
+				'2xl': '0 10px 10px rgba(135, 81, 159, 0.40)',
+			}
 		}
 	},
 	plugins: [],
