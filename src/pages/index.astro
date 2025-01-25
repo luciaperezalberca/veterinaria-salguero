@@ -5,11 +5,13 @@ import SectionContainer from '../components/SectionContainer.astro';
 import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
 import Stethoscope from '../components/icons/Stethoscope.astro';
-import Hospital from '../components/icons/Hospital.astro';
-import MedicalCross from '../components/icons/MedicalCross.astro';
 import Vaccine from '../components/icons/Vaccine.astro';
+import Hospital from '../components/icons/Hospital.astro';
+import DogBowl from '../components/icons/DogBowl.astro';
 import Micropscope from '../components/icons/Micropscope.astro';
 import Bath from '../components/icons/Bath.astro';
+import HeartBeat from '../components/icons/HeartBeat.astro';
+import MedicalKit from '../components/icons/MedicalKit.astro';
 ---
 
 <Layout 
@@ -19,42 +21,67 @@ import Bath from '../components/icons/Bath.astro';
 		<Header />
 		<SectionContainer>
 			<div class="flex flex-col items-center sm:items-start gap-8 bg-gray-200/50 text-center sm:text-start text-pretty rounded-lg p-10 sm:p-5 md:p-1 sm:bg-transparent">
-				<p class="text-xl md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> a nuestro sitio web </p>
+				<p class="text-xl md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> al sitio web de</p>
 				<h1 class="text-3xl md:text-5xl uppercase text-primary-violet font-bold"> Veterinaria Salguero </h1>
-				<p class="text-md md:text-xl font-light sm:w-2/3"> Con mas de 10 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
+				<p class="text-md md:text-xl font-light sm:w-2/3"> Con mas de 14 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
 				<Button> Contactanos </Button>
 			</div>
 		</SectionContainer>
 	</div>
 	<main>
 		<section class="flex flex-col justify-center items-center mt-20">
-			<h1 class="text-4xl">Nuestros <span class="text-primary-violet font-bold">Servicios</span></h1>
+
+			<!-- seccion servicios -->
+			<h1 class="text-4xl" id="servicios">Nuestros <span class="text-primary-violet font-bold">Servicios</span></h1>
 			<div  class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center p-10 xl:pl-32 xl:pr-32">
 				<Card>
 					<Stethoscope />
-					<p class="p-5 text-center text-[17px]">Chequeos y controles de rutina para tus mascotas</p>
+					<p class="py-5 px-2 text-center text-lg">Consulta médica general</p>
+				</Card>
+				<Card>
+					<HeartBeat />
+					<p class="py-5 px-2 text-center text-lg">Consulta con especialista</p>
 				</Card>
 				<Card>
 					<Hospital />
-					<p class="p-5 text-center text-[17px]">Cirugias programadas y de urgencia, simples y de alta complejidad</p>
-				</Card>
-				<Card>
-					<MedicalCross />
-					<p class="p-5 text-center text-[17px]">Servicios de urgencia. Contamos con las últimas tecnologías</p>
-				</Card>
-				<Card>
-					<Vaccine />
-					<p class="px-4 py-5 text-center text-[17px]">Servicio de vacunación. Vacunas de calendario y especiales</p>
+					<p class="py-5 px-2 text-center text-lg">Cirugía general</p>
 				</Card>
 				<Card>
 					<Micropscope />
-					<p class="p-5 text-center text-[17px]">Laboratorio, estudios y especialidades. Consultanos!</p>
+					<p class="py-5 px-2 text-center text-lg">Estudios de laboratorio</p>
+				</Card>
+				<Card>
+					<MedicalKit />
+					<p class="py-5 px-2 text-center text-lg">Métodos complementarios</p>
 				</Card>
 				<Card>
 					<Bath />
-					<p class="p-5 text-center text-[17px]">Contamos con baño y peluquería todos los Martes y Sábados</p>
+					<p class="py-5 px-2 text-center text-lg">Servicio de peluquería</p>
+				</Card>
+				<Card>
+					<Vaccine />
+					<p class="py-5 px-2 text-center text-lg">Farmacia profesional</p>
+				</Card>
+				<Card>
+					<DogBowl />
+					<p class="py-5 px-2 text-center text-lg">Petshop</p>
 				</Card>
 			</div>
+
+		</section>
+		<section class="bg-secondary-lightviolet w-full" >
+			<SectionContainer>
+				<div class="flex justify-center gap-10">
+					<img src="images/dog-care.webp" loading="lazy" alt="imagen de perro pequeño que le esta sosteniendo la pata delantera el veterinario" class="w-[30rem]">
+					<div class="flex flex-col gap-5">
+						<h1 class="text-xl md:text-3xl font-light pb-3" id="nosotros">El <span class="font-semibold">Inicio</span> de la <span class="font-semibold">Veterinaria</span> </h1>
+						<p class="font-light"> Veterinaria Salguero ha estado sirviendo a la comunidad desde el 1 de Abril de 2010, ofreciendo atención veterinaria completa para mascotas. </p>
+						<p> Nos enfocamos en brindar un cuidado médico de calidad, utilizando tecnología actualizada y un enfoque práctico para asegurar la salud y bienestar de tu mascota. </p>
+						<p> Ya sea para una visita de rutina o una necesidad más urgente, en Veterinaria Salguero estamos para ayudarte. </p>
+						<p> Te invitamos a conocer más sobre nuestros servicios y cómo podemos asistir en el cuidado de tus animales de compañía. </p>
+					</div>
+				</div>
+			</SectionContainer>
 		</section>	
 	</main>
 </Layout>
