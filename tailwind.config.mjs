@@ -8,6 +8,7 @@ export default {
 			  'primary-violet': '#87519F',
 			  'primary-lightviolet': '#D2C3D9',
 			  'secondary-lightviolet': '#DBD0E0',
+			  'secondary-blue': '#0000EE',
 			  'tertiary-lightviolet': ' #F1E9F8',
 			},
 			dropShadow: {
