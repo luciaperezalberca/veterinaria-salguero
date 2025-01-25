@@ -21,7 +21,7 @@ import MedicalKit from '../components/icons/MedicalKit.astro';
 		<Header />
 		<SectionContainer>
 			<div class="flex flex-col items-center sm:items-start gap-8 bg-gray-200/50 text-center sm:text-start text-pretty rounded-lg p-10 sm:p-5 md:p-1 sm:bg-transparent">
-				<p class="text-xl md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> al sitio web de</p>
+				<p class="text-lg md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> a nuestro sitio web</p>
 				<h1 class="text-3xl md:text-5xl uppercase text-primary-violet font-bold"> Veterinaria Salguero </h1>
 				<p class="text-md md:text-xl font-light sm:w-2/3"> Con mas de 14 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
 				<Button> Contactanos </Button>
@@ -32,7 +32,7 @@ import MedicalKit from '../components/icons/MedicalKit.astro';
 		<section class="flex flex-col justify-center items-center mt-20">
 
 			<!-- seccion servicios -->
-			<h1 class="text-4xl" id="servicios">Nuestros <span class="text-primary-violet font-bold">Servicios</span></h1>
+			<h1 class="text-2xl md:text-4xl" id="servicios">Nuestros <span class="text-primary-violet font-bold">Servicios</span></h1>
 			<div  class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center p-10 xl:pl-32 xl:pr-32">
 				<Card>
 					<Stethoscope />
@@ -71,14 +71,36 @@ import MedicalKit from '../components/icons/MedicalKit.astro';
 		</section>
 		<section class="bg-secondary-lightviolet w-full" >
 			<SectionContainer>
-				<div class="flex justify-center gap-10">
+				<div class="flex flex-col lg:flex-row justify-center gap-10">
 					<img src="images/dog-care.webp" loading="lazy" alt="imagen de perro pequeño que le esta sosteniendo la pata delantera el veterinario" class="w-[30rem]">
 					<div class="flex flex-col gap-5">
 						<h1 class="text-xl md:text-3xl font-light pb-3" id="nosotros">El <span class="font-semibold">Inicio</span> de la <span class="font-semibold">Veterinaria</span> </h1>
-						<p class="font-light"> Veterinaria Salguero ha estado sirviendo a la comunidad desde el 1 de Abril de 2010, ofreciendo atención veterinaria completa para mascotas. </p>
-						<p> Nos enfocamos en brindar un cuidado médico de calidad, utilizando tecnología actualizada y un enfoque práctico para asegurar la salud y bienestar de tu mascota. </p>
+						<p class="font-light"> Veterinaria Salguero ha estado sirviendo a la comunidad desde el <span class="text-primary-violet font-bold">1 de Abril de 2010</span>, ofreciendo atención veterinaria completa para mascotas. </p>
+						<p> <span class="text-primary-violet font-bold">Nos enfocamos en brindar un cuidado médico de calidad</span>, utilizando tecnología actualizada y un enfoque práctico para asegurar la salud y bienestar de tu mascota. </p>
 						<p> Ya sea para una visita de rutina o una necesidad más urgente, en Veterinaria Salguero estamos para ayudarte. </p>
 						<p> Te invitamos a conocer más sobre nuestros servicios y cómo podemos asistir en el cuidado de tus animales de compañía. </p>
+					</div>
+				</div>
+			</SectionContainer>
+		</section>
+		<section class="bg-tertiary-lightviolet w-full" >
+			<SectionContainer>
+				<div class="flex flex-col justify-center w-full">
+					<h1 class="text-xl md:text-3xl font-light pb-10 w-full" id="contacto"> Donde <span class="font-semibold">Encontrarnos</span> </h1>
+					<div class="flex flex-col lg:flex-row lg:gap-10 justify-center items-center">
+						<div class="w-full lg:max-w-2xl">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.443974308881!2d-58.425293124720966!3d-34.59293319714579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e8e8306dd%3A0xa7b059a21f96dda3!2sVeterinaria%20Salguero!5e0!3m2!1ses-419!2sar!4v1737832585978!5m2!1ses-419!2sar" width="full" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<p class="pt-10 lg:pt-0 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Dirección:</p>
+							<p class="text-md md:text-lg"> Francisco Acuña de Figueroa 1599,</p>
+							<p class="text-md md:text-lg"> Ciudad Autónoma de Buenos Aires </p>
+							<p class="pt-10 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Horario:</p>
+							<p class="text-md md:text-lg"> Lunes a Viernes de 10 a 20hs </p>
+							<p class="text-md md:text-lg"> Sábados de 10 a 15hs </p>
+							<p class="pt-10 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Teléfono:</p>
+							<p class="text-lg md:text-xl font-semibold"> (011) 4861 9834 </p>
+						</div>
 					</div>
 				</div>
 			</SectionContainer>
