@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
@@ -12,15 +13,16 @@ import Micropscope from '../components/icons/Micropscope.astro';
 import Bath from '../components/icons/Bath.astro';
 import HeartBeat from '../components/icons/HeartBeat.astro';
 import MedicalKit from '../components/icons/MedicalKit.astro';
+import '@fontsource/manrope';
 ---
 
 <Layout 
-	title="Sitio web de Veterinaria Salguero"
+	title="Veterinaria Salguero"
 	description="Veterinaria Salguero. Cirugia, Consultorio, Laboratorio y Estudios. Fco. Acuña de Figueroa 1599">
 	<div class="bg-[url(/images/image-home.webp)] bg-cover bg-right min-h-screen">
 		<Header />
 		<SectionContainer>
-			<div class="flex flex-col items-center sm:items-start gap-8 bg-gray-200/50 text-center sm:text-start text-pretty rounded-lg p-10 sm:p-5 md:p-1 sm:bg-transparent">
+			<div class="font-sans flex flex-col items-center sm:items-start gap-8 bg-gray-200/50 text-center sm:text-start text-pretty rounded-lg p-10 sm:p-5 md:p-1 sm:bg-transparent">
 				<p class="text-lg md:text-3xl font-light"><span class="font-semibold">Bienvenidos</span> a nuestro sitio</p>
 				<h1 class="text-3xl md:text-5xl uppercase text-primary-violet font-bold"> Veterinaria Salguero </h1>
 				<p class="text-md md:text-xl font-light sm:w-2/3"> Con mas de 14 años de trayectoria acompañando a tu mejor amigo en todas sus etapas. </p>
@@ -29,7 +31,7 @@ import MedicalKit from '../components/icons/MedicalKit.astro';
 		</SectionContainer>
 	</div>
 	<main>
-		<section class="flex flex-col justify-center items-center mt-20">
+		<section class="flex flex-col justify-center items-center mt-20 font-sans mb-10">
 
 			<!-- seccion servicios -->
 			<h1 class="text-2xl md:text-4xl" id="servicios">Nuestros <span class="text-primary-violet font-bold">Servicios</span></h1>
@@ -69,7 +71,8 @@ import MedicalKit from '../components/icons/MedicalKit.astro';
 			</div>
 
 		</section>
-		<section class="bg-secondary-lightviolet w-full" >
+
+		<section class="bg-secondary-lightviolet w-full font-sans" >
 			<SectionContainer>
 				<div class="flex flex-col lg:flex-row justify-center gap-10">
 					<img src="images/dog-care.webp" loading="lazy" alt="imagen de perro pequeño que le esta sosteniendo la pata delantera el veterinario" class="w-[30rem]">
@@ -83,32 +86,31 @@ import MedicalKit from '../components/icons/MedicalKit.astro';
 				</div>
 			</SectionContainer>
 		</section>
-		<section class="bg-tertiary-lightviolet w-full" >
-			<SectionContainer>
-				<div class="flex flex-col justify-center items-center w-full">
-					<h1 class="text-xl md:text-3xl font-light pb-10 w-full" id="contacto"> Donde <span class="font-semibold">Encontrarnos</span> </h1>
-					<div class="flex flex-col md:flex-row justify-center items-center">
-						<div class="block sm:hidden">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4437973576564!2d-58.423254624260174!3d-34.59293767295816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e8e8306dd%3A0xa7b059a21f96dda3!2sVeterinaria%20Salguero!5e0!3m2!1ses-419!2sar!4v1737837184716!5m2!1ses-419!2sar" width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div class="hidden sm:block sm:mr-10">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4437973576564!2d-58.423254624260174!3d-34.59293767295816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e8e8306dd%3A0xa7b059a21f96dda3!2sVeterinaria%20Salguero!5e0!3m2!1ses-419!2sar!4v1737837184716!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div>
-							<p class="pt-10 lg:pt-0 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Dirección:</p>
-							<p class="text-md md:text-lg"> Francisco Acuña de Figueroa 1599,</p>
-							<p class="text-md md:text-lg"> Ciudad Autónoma de Buenos Aires </p>
-							<p class="pt-10 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Horario:</p>
-							<p class="text-md md:text-lg"> Lunes a Viernes de 10 a 20hs </p>
-							<p class="text-md md:text-lg"> Sábados de 10 a 15hs </p>
-							<p class="pt-10 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Teléfono:</p>
-							<p class="text-lg md:text-xl font-semibold"> (011) 4861 9834 </p>
-							<p class="pt-10 pb-3 text-lg md:text-2xl text-primary-violet font-bold">Email:</p>
-							<a href="mailto:veterinariasalguero@hotmail.com?subject=Consulta%20sobre%20atencion" class="text-lg md:text-xl hover:text-secondary-blue hover:cursor-pointer hover:underline">veterinariasalguero@hotmail.com</a>
+		<section class="bg-tertiary-lightviolet w-full font-sans p-20 flex items-center">
+			<div class="flex flex-col w-full">
+				<div class="flex flex-col lg:flex-row items-center justify-center">
+					<div class="block md:hidden mb-10">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4437973576564!2d-58.423254624260174!3d-34.59293767295816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e8e8306dd%3A0xa7b059a21f96dda3!2sVeterinaria%20Salguero!5e0!3m2!1ses-419!2sar!4v1737837184716!5m2!1ses-419!2sar" width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="hidden md:block mb-10 lg:mr-10 lg:mt-10">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4437973576564!2d-58.423254624260174!3d-34.59293767295816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e8e8306dd%3A0xa7b059a21f96dda3!2sVeterinaria%20Salguero!5e0!3m2!1ses-419!2sar!4v1737837184716!5m2!1ses-419!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div>
+						<h1 class="text-xl md:text-3xl font-light pb-5 w-full" id="contacto"> Donde <span class="font-semibold">Encontrarnos</span> </h1>
+						<p class="text-md md:text-lg"> Francisco Acuña de Figueroa 1599,</p>
+						<p class="text-md md:text-lg mb-5"> Ciudad Autónoma de Buenos Aires. </p>
+						
+						<p class="text-md md:text-lg"> Lunes a Viernes de 10 a 20hs </p>
+						<p class="text-md md:text-lg mb-5"> Sábados de 10 a 15hs </p>
+						
+						<p class="text-lg md:text-xl font-semibold"> (011) 4861 9834 </p>
+						<div class="mt-2">
+							<a href="mailto:veterinariasalguero@hotmail.com?subject=Consulta%20sobre%20atencion" class="drop-shadow-md text-sm flex justify-center items-center uppercase bg-primary-violet w-fit rounded-3xl font-semibold tracking-widest hover:opacity-80 py-1 px-5 text-white">Enviar Email</a>
 						</div>
 					</div>
 				</div>
-			</SectionContainer>
+			</div>
 		</section>	
 	</main>
+	<Footer />
 </Layout>

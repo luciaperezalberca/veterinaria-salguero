@@ -4,6 +4,9 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['Manrope', 'sans-serif'],
+			},
 			colors: {
 			  'primary-violet': '#87519F',
 			  'primary-lightviolet': '#D2C3D9',
@@ -14,7 +17,7 @@ export default {
 			dropShadow: {
 				'md': '2px 4px 3px rgba(135, 81, 159, 0.50)',
 				'2xl': '0 10px 10px rgba(135, 81, 159, 0.40)',
-			}
+			},
 		}
 	},
 	plugins: [],
